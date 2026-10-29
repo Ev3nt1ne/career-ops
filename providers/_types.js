@@ -122,6 +122,12 @@
  *                               title tells it apart. A candidate's language
  *                               is only ever this field, never read from its
  *                               URL, so a version without it stays a duplicate.
+ * @property {string} [note] Free-text hint, written to the pipeline entry as
+ *                               `| note: {text}` (modes/pipeline.md). A provider
+ *                               sets it from what the source states (`apple.mjs`:
+ *                               a posting Apple labels PIPE). `--include-blacklisted`
+ *                               prepends `blacklisted: {reason} — ` to it. No
+ *                               built-in filter reads it.
  */
 
 /**

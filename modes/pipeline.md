@@ -103,9 +103,8 @@ are defined:
   a low score as a ghost/scam-posting warning and weigh it in Block G legitimacy
   before spending an evaluation. The same score + flags are also written to the
   trailing columns of `data/scan-history.tsv`.
-- `| note: {text}` — a free-text ranking signal an importer attached to the offer
-  (`- [ ] {url} | {company} | {title} | note: curated shortlist` is valid). The
-  deterministic scanner never sets it.
+- `| note: {text}` — a free-text signal an importer or a provider attached to the
+  offer (`- [ ] {url} | {company} | {title} | note: curated shortlist` is valid).
 
 - `| rank: {score}/5 — {reason}` — an **opt-in** LLM relevance annotation written
   only by `node rank-pipeline.mjs`, never by a scan. The score is 0–5 to one
